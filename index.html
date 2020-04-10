@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- defines the script link or resources for your website -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="js\store-data.js"></script>
+  <script src="js\index.js"></script>
+  <script src="https://kit.fontawesome.com/c939d0e917.js"></script>
+  <link rel="stylesheet" href="style\style.css">
+
+  <script async defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCcwazb-T7zvceyA4VLWVB-eXvwj-XEUIA&callback=initMap">
+  </script>
+
+  <title>EPIC GOOGLE MAPS</title>
+
+</head>
+
+<body>
+
+  <div class="title">Store Locator</div>
+  <div class="search-container">
+    <div class= "search">
+      <input id="zip-code-input" type="text" placeholder="Enter Zip">
+      <i class="fas fa-search" onclick ="searchStores()" ></i>
+    </div>
+  </div>
+
+  <div class="store-list-container">
+    <div class="store-list">
+
+      <!-- <div class="store-container">
+        <div class="store-container-background">
+          <div class="store-info-container">
+            <div class="store-address">
+                <span>1234 Address. rd</span>
+                <span>City,State, 10082</span>
+
+            </div>
+                  <div class="store-phone-number">8-7000</div>
+          </div>
+          <div class="store-number-container">
+            <div class="store-number">1</div>
+          </div>
+        </div>
+      </div> -->
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+ <div id="map"></div>
+
+
+
+</body>
+</html>

@@ -1,0 +1,183 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+#map {
+  width: 100%;
+  height: 100%;
+}
+
+.title{
+  position: absolute;
+    z-index: 100;
+    font-size: 60px;
+    font-weight: bold;
+    color: #cce5fe;
+    text-transform: uppercase;
+    top: 100px;
+    left: 100px;
+}
+.search-container{
+  position: absolute;
+    z-index: 100;
+    top: 230px;
+    left: 100px;
+    height: 60px;
+    width: 400px;
+    border-radius: 50px;
+    background-color: #4D4D4D;
+
+    display:flex;
+}
+.search-container .search{
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+  padding-right: 20px;
+
+
+}
+.search-container input{
+  width: 100%;
+    font-size: 25px;
+    background-color: transparent;
+    border: none;
+    color: white;
+
+}
+.search-container input:focus{
+  outline: none;
+}
+.search-container i{
+  color:white;
+  font-size: 20px;
+}
+.store-list-container{
+  position: absolute;
+    z-index: 100;
+    width: 400px;
+    /* height: 320px; */
+    background: white;
+    top: 320px;
+    left: 100px;
+    border-radius: 30px;
+    bottom: 20px;
+    display: flex;
+    overflow-y: hidden;
+    padding-bottom: 30px;
+    opacity: 0.85;
+  }
+.store-container{
+  border-bottom: 1px solid #979797;
+  cursor: pointer;
+  display: flex;
+  flex-grow: 1;
+}
+
+
+.store-info-container{
+  flex-grow: 1;
+}
+.store-number-container{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+.store-address{
+  font-size: 21px;
+  color: #514C4C;
+  margin-top: 30px;
+}
+
+.store-address span{
+  display: block;
+}
+.store-phone-number{
+  color: #B5ADAD;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.store-number {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #454E53;
+  border-radius: 50px;
+  color: #B5ADAD;
+  font-size: 12px;
+}
+.store-list{
+  flex-grow: 1;
+    overflow-y: scroll;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.store-list::-webkit-scrollbar{
+  /* //this hide the scroll bar in .store-list container */
+    display:none;
+}
+
+/* this is the design of addlistener of google Maps */
+
+.store-info-window{
+  min-width: 300px;
+  font-size: 18px;
+  padding: 8px;
+}
+.store-info-name{
+    font-size: 24px;
+    font-weight: bold;
+    color: #53707f;
+}
+.store-info-status{
+    margin-top: 6px;
+    border-bottom: 2px solid;
+    padding-bottom: 6px;
+}
+.store-info-address{
+  display: flex;
+  align-items: center;
+  margin-top: 6px;
+  padding-bottom: 6px;
+  font-style: italic;
+}
+.store-info-phone{
+      display: flex;
+      align-items: center;
+      margin-top: 6px;
+      font-style: italic;
+      font-size: 16px;
+}
+.icon-background{
+    height: 30px;
+    width: 30px;
+    background-color: #6ca9ea;
+    border-radius: 50px;
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.search  i {
+  cursor: pointer;
+}
+.store-container-background{
+  display: flex;
+  flex-grow: 1;
+  border-radius: 10px;
+  padding-left: 5px;
+  padding-right: 15px;
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+
+.store-container-background:hover{
+  background-color: #ccc;
+
+}
